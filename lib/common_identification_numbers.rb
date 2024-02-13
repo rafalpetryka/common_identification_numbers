@@ -6,7 +6,9 @@ require 'common_identification_numbers/polish/regon'
 require 'common_identification_numbers/polish/regon9'
 require 'common_identification_numbers/polish/regon14'
 require 'common_identification_numbers/polish/edg'
+require 'common_identification_numbers/polish/base_identity_card_number'
 require 'common_identification_numbers/polish/identity_card_number'
+require 'common_identification_numbers/polish/mobile_identity_card_number'
 require 'common_identification_numbers/polish/krs'
 
 if defined?(ActiveModel)
@@ -14,6 +16,7 @@ if defined?(ActiveModel)
   require 'active_model/validations/pesel_validator'
   require 'active_model/validations/regon_validator'
   require 'active_model/validations/identity_card_number_validator'
+  require 'active_model/validations/mobile_identity_card_number_validator'
 end
 
 module CommonIdentificationNumbers
